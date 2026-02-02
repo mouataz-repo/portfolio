@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio.</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ec68bbe542.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.39/build/spline-viewer.js"></script>
+    
+</head>
+<body>
+    <header>
+            <div id="logo">
+                <p>Mouataz <span>.</span></p>
+            </div>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">gallery</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+            <div class="btncontainer">
+                <button class="btn">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-solid fa-at"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </button>
+            </div>
+    </header>
+    <section class="home">
+        <div class="left">
+            <h1>Mouataz<span>.</span> Design<span>.</span> Code<span>.</span></h1>
+            <p>Turning complex ideas into sleek, functional digital experiences.</p>
+            <div class="btncontainer">
+                <button class="btn">
+                    <a href="#" style="color: white; text-decoration: none;">Let's work together.</a>
+                </button>
+            </div>
+        </div>
+        <div class="right">
+            <spline-viewer url="https://prod.spline.design/5EtdCfp1yhvdo2WL/scene.splinecode"></spline-viewer>        
+        </div>
+    </section>
+    <section class="gallery">
+        <h1 class="gallery-title">Images Gallery <span>.</span></h1>
+        <div class="gallery-container">
+            <div id="images">
+                <img src="media/ilya-pavlov-OqtafYT5kTw-unsplash.jpg" id="img1">
+                <img src="media/karl-pawlowicz-QUHuwyNgSA0-unsplash.jpg" id="img2">
+                <img src="media/markus-spiske-rWKhlvk-bsM-unsplash.jpg" id="img3">
+                <img src="media/oscar-nord-MuJHwDHbXUk-unsplash.jpg" id="img4">
+                <img src="media/roozbeh-eslami-YlVjrBkfXt8-unsplash.jpg" id="img5">
+            </div>
+            <div id="description">
+                <h2>Selected Work</h2>
+                <p>
+                    Explore my latest digital creations where <strong>clean code</strong> meets 
+                    <strong>high-end design</strong>. This gallery showcases a blend of interactive 
+                    3D environments, minimalist web interfaces, and robust backend architectures. 
+                    Each project is a journey from a simple concept to a polished, 
+                    user-centric experience.
+                </p>
+                <a href="https://github.com/ton-profil" target="_blank" class="github-link">
+                    <i class="fa-brands fa-github"></i>
+                    <span>View on GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <div id="carousel">
+        <div class="scroll-container">
+            <div class="text-group">
+                <div id="text"><i class="fa-solid fa-code"></i><h1>Mouataz<span>.</span></h1></div>
+                <div id="text"><i class="fa-solid fa-code"></i><h1>Mouataz<span>.</span></h1></div>
+                <div id="text"><i class="fa-solid fa-code"></i><h1>Mouataz<span>.</span></h1></div>
+                <div id="text"><i class="fa-solid fa-code"></i><h1>Mouataz<span>.</span></h1></div>
+            </div>
+            <div class="text-group">
+                <div id="text"><i class="fa-solid fa-code"></i><h1>Mouataz<span>.</span></h1></div>
+                <div id="text"><i class="fa-solid fa-code"></i><h1>Mouataz<span>.</span></h1></div>
+                <div id="text"><i class="fa-solid fa-code"></i><h1>Mouataz<span>.</span></h1></div>
+                <div id="text"><i class="fa-solid fa-code"></i><h1>Mouataz<span>.</span></h1></div>
+            </div>
+        </div>
+    </div>
+    <section id="formzone">
+        <div class="textzone">
+            <h1 class="contact">Contact<span>.</span></h1>
+            <p class="infocontact">Do you have an innovative project in mind or need technical expertise to bring your ideas to life? I am always open to new collaborative opportunities, whether it's building a complex web application from scratch or optimizing your digital architecture. Let’s connect and turn your vision into high-performance code.</p>
+        </div>
+        <div class="formcontain">
+            <div class="term-head">
+                <div class="term-buttons">
+                    <div class="dot" id="red"></div>
+                    <div class="dot" id="yellow"></div>
+                    <div class="dot" id="green"></div>
+                </div>
+                <span style="font-size: 0.8rem; color: #444; margin-left: 10px;">bash — contact_me.sh</span>
+            </div>
+            <form action="#" method="post" novalidate>
+                <label for="name">> name:</label>
+                <input type="text" id="name" placeholder="name" >
+                <label for="co">> company name:</label>
+                <input type="text" id="co" placeholder="company name">
+                <label for="number">> phone num:</label>
+                <input type="tel" id="number" placeholder="06********">
+                <label for="mail">> email:</label>
+                <input type="email" id="mail" placeholder="example@domain.com">
+                <label for="mess">> message:</label>
+                <textarea name="mess" id="mess" placeholder="message..."></textarea>
+                <div class="sbmt">
+                    <button id="submit">
+                        <span>Submit.</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+    </footer>
+</body>
+</html>
